@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+    <meta charset="UTF-8">
+{% seo %}
+    <title>DCRC LLC - Website and Application Development</title>
+    <link rel="stylesheet" href="/assets/css/style.scss">
+</head>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '828542217843147',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v12.0'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
+
+{
+    status: 'connected',
+    authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
+    }
+}
+
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+</script>
+</header> 
+<body>
+<div id="header">
+<img src= "DCRC.png" width="652" height="360" alt=""/>
+    
+        <nav>
+             <ul>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/consultation">Book a Consultation</a></li>
+                <li><a href="/invoices">View and Pay Invoices</a></li>
+            </ul>
+        </nav>
+ </div>
+  <section>
+ <div id="title">
+    <h1>DCRC LLC</h1>
+    <h2>Heuristic Evaluations, Website and Application Development for Businesses</h2>
+    </header>
+	<section>
+		<h3>We are able to make your vision come to life, the way you envision it!</h3>
+		<p> If you are needing development, project planning, and testing completed, then we are the right company for you. We help to complete your project from start to finish at affordable rates.</p>
+        </section>
+      </section>
+      </div>
+      </body>
+      <html>
+ </div>
